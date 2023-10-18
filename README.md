@@ -5,11 +5,6 @@
 <h1>osTicket - Post-Install Configuration</h1>
 This tutorial outlines the post-install configuration of the open-source help desk ticketing system osTicket.<br />
 
-
-<h2>Video Demonstration</h2>
-
-- ### [YouTube: How To Configure osTicket, post-installation](https://www.youtube.com)
-
 <h2>Environments and Technologies Used</h2>
 
 - Microsoft Azure (Virtual Machines/Compute)
@@ -22,34 +17,52 @@ This tutorial outlines the post-install configuration of the open-source help de
 
 <h2>Post-Install Configuration Objectives</h2>
 
-- Item 1
-- Item 2
-- Item 3
-- Item 4
-- Item 5
+- Configure Roles
+- Configure Departments
+- Allow anyone to create tickets
+- Configure Users (customers) and Agents (workers)
+- Configure Help Topics and SLA Agreements
 
 <h2>Configuration Steps</h2>
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/TDUk3TJ.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
-
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Once you have installed and finished setting up osTicket, log in to the admin account to start configuring roles, departments, teams, etc. I started by going into the admin panel next to where it says “welcome, juan”, then to Agents tab, click on Roles and: Add New Role. Here I set up the Supreme Admin role and gave this role all permissions. On the same Agents tab I clicked on Departments and added the Systems administrators.
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/i7mY8v5.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+For Teams, I created the Level I and Level II support teams. Teams allow you to bring together Agents from other departments together to solve any Issues.
+
+To allow anyone to create tickets to this, you can go to the Settings tab, then click Users and unchecked Registration Required.
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/NmlN8MW.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+The Agents that you add and osTicket can be assigned to teams and departments. I created an account for Jane & John. I also added some users who create some ticket examples, Karen & Ken.
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/xksLhoo.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Added some Service Level Agreements: these are agreements that set deadlines for the tickets to be completed. I made 3, for the levels of severity.
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/WbExjuu.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Finally, I changed the default help topics and added some new ones for when tickets get submitted. The configuration is done and we can see some mock tickets get placed and closed in the next section.
 </p>
 <br />
